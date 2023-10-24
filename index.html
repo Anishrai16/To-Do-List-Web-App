@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-do List</title>
+    <link rel="shortcut icon" type="image/png" href="logo.png" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+
+  <body>
+    <div class="container">
+      <h2><i class="fa-solid fa-clipboard-list fa-bounce" style="color: #094ace;"></i> To-Do-List</h2>
+      <div id="new-task">
+        <input type="text" id="input" placeholder="Enter Your Task Here..." />
+        <button id="push">ADD</button>
+      </div>
+
+      <!-- Dropdown to filter tasks -->
+      <div id="filter-container">
+        <label for="filter" style="color: rgb(47,53,397);"><b>Filter:</label>
+        <select id="filter">
+          <option value="all">All Tasks</option>
+          <option value="completed">Completed Tasks</option>
+          <option value="pending">Pending Tasks</option>
+        </select>
+      </div>
+
+      <div id="tasks"></div>
+         <button id="clear-all">Clear All</button>
+      </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
